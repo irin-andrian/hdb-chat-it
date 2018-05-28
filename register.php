@@ -27,7 +27,7 @@
     <div class="card-body register-card-body">
 
       <p class="login-box-msg">Créer un nouveau compte</p>
-      <form action="../../index.html" method="post">
+      <form action="inc/register_action.php" method="post">
         <div class="row">
           <div class="col-md-10 form-group has-feedback">
             <input type="text" name="username" class="form-control" placeholder="Nom complet">            
