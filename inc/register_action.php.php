@@ -12,8 +12,4 @@ $result = $mysqli->query ($sql);
 echo ("test =" . $result->num_rows);
 
 exit();
-<<<<<<< HEAD
-=======
-
->>>>>>> initialize db connection
 ?>

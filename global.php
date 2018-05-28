@@ -1,5 +1,6 @@
 <?php
-
+require_once('inc/db_connect.php');
+$mysqli = conn();
 $sql = "
   SELECT 
     u.username as nom,
@@ -11,27 +12,8 @@ $sql = "
   ORDER BY
     m.date DESC
 ";
-
-$aMessage = [
-  [
-    'nom' => "Irin Andrian",
-    'message' => "Is this template really for free? That's unbelievable!"
-  ],
-  [
-    'nom' => "Rija Michel",
-    'message' => "You better believe it!"
-  ],
-  [
-    'nom' => "Irin Andrian",
-    'message' => "Working with AdminLTE on a great new app! Wanna join?"
-  ],
-  [
-    'nom' => "Rija Michel",
-    'message' => "I would love to."
-  ]
-];
-
-
+$result = $mysqli->query($sql);
+$aMessage = $result->fetch_all(MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
