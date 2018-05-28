@@ -30,19 +30,19 @@
 
       <form action="register_action.php" method="post">
         <div class="form-group has-feedback">
-          <input type="text" class="form-control" placeholder="Nom complet">
+          <input type="text" name="nom" class="form-control" placeholder="Nom complet">
           <span class="fa fa-user form-control-feedback"></span>
         </div>
         <div class="form-group has-feedback">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" name="email" class="form-control" placeholder="Email">
           <span class="fa fa-envelope form-control-feedback"></span>
         </div>
         <div class="form-group has-feedback">
-          <input type="password" class="form-control" placeholder="Mot de passe">
+          <input type="password" name="password" class="form-control" placeholder="Mot de passe">
           <span class="fa fa-lock form-control-feedback"></span>
         </div>
         <div class="form-group has-feedback">
-          <input type="password" class="form-control" placeholder="Retaper le mot de passe">
+          <input type="password" name="password2" class="form-control" placeholder="Retaper le mot de passe">
           <span class="fa fa-lock form-control-feedback"></span>
         </div>
         <div class="row">
