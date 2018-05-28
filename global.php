@@ -100,7 +100,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link">
+            <a href="/" class="nav-link">
               <i class="nav-icon fa fa-dashboard"></i>
               <p>
                 Accueil
@@ -108,7 +108,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+            <a href="global.php" class="nav-link active">
               <i class="nav-icon fa fa-th"></i>
               <p>
                 Global
