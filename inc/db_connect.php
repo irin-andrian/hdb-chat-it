@@ -8,4 +8,13 @@ function conn() {
 $mysqli = conn();
 
 
+<<<<<<< HEAD:inc/db_connect.php
 ?>
+=======
+exit();
+<<<<<<< HEAD
+=======
+
+>>>>>>> initialize db connection
+?>
+>>>>>>> loggin:inc/register_action.php.php
