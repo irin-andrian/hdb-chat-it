@@ -33,7 +33,7 @@
                 <div class="row">
                     <div class="col-md-10">
                         <div class="form-group has-feedback">
-                            <input type="email" class="form-control" placeholder="Email">                            
+                            <input type="text" class="form-control" placeholder="Username">                            
                         </div>
                     </div>
                     <div class="col-md-2">
