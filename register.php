@@ -25,40 +25,29 @@
   </div>  
   <div class="col-md-12 card">
     <div class="card-body register-card-body">
+
       <p class="login-box-msg">Créer un nouveau compte</p>
       <form action="../../index.html" method="post">
         <div class="row">
           <div class="col-md-10 form-group has-feedback">
-            <input type="text" class="form-control" placeholder="Nom complet">            
+            <input type="text" name="username" class="form-control" placeholder="Nom complet">            
           </div>
           <div class="col-md-2">
             <span class="fa fa-user form-control-feedback"></span>
           </div>
         </div>
+        
         <div class="row">
           <div class="col-md-10 form-group has-feedback">
-          <input type="email" class="form-control" placeholder="Email">
-          </div>
-          <div class="col-md-2">
-            <span class="fa fa-envelope form-control-feedback"></span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-10 form-group has-feedback">
-          <input type="password" class="form-control" placeholder="Mot de passe">
+          <input type="password" name="pwd" class="form-control" placeholder="Mot de passe">
           </div>
           <div class="col-md-2">
           <span class="fa fa-lock form-control-feedback"></span>
           </div>
+
         </div>
-        <div class="row">
-          <div class="col-md-10 form-group has-feedback">
-            <input type="password" class="form-control" placeholder="Retaper le mot de passe">
-          </div>
-          <div class="col-md-2">
-            <span class="fa fa-lock form-control-feedback"></span>
-          </div>
-        </div>
+       
+       
         <div class="card-footer">
           <a href="/index.php" class="btn btn-default">Accueil</a>
           <button type="submit" class="btn btn-primary float-right" onclick="">S'inscrire</button>
