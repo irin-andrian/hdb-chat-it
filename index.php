@@ -399,9 +399,9 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/register.html" class="nav-link">
+                <a href="pages/examples/register.php" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Register</p>
+                  <p>Inscription</p>
                 </a>
               </li>
               <li class="nav-item">
