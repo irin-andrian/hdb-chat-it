@@ -43,33 +43,28 @@
 
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
-        <!-- Messages Dropdown Menu -->
         <li class="nav-item dropdown">
-          <a class="nav-link" data-toggle="dropdown" href="#">
-            <i class="fa fa-comments-o"></i>
-          </a>
-        </li>
-        <!-- Notifications Dropdown Menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link" data-toggle="dropdown" href="#">
-            <i class="fa fa-bell-o"></i>
-          </a>
-          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-            <span class="dropdown-item dropdown-header">Notifications</span>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
-              <i class="fa fa-envelope mr-2"></i> Noveaux messages
-              <span class="float-right text-muted text-sm"></span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
-              <i class="fa fa-users mr-2"></i> Demandes d'ajout
-              <span class="float-right text-muted text-sm"></span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item dropdown-footer">Voir tous les notifications</a>
-          </div>
+          <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+              <!-- Messages Dropdown Menu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                  <i class="fa fa-comments-o"></i>
+                </a> 
+              </li>
+              <!-- Notifications Dropdown Menu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                   <i class="fa fa-bell-o"></i>
+                </a> 
+              </li>
+              <!-- Déconnexion -->
+              <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                   <i class="fa fa-sign-out"></i>
+                </a> 
+              </li>
+            </ul>
         </li>
       </ul>
   </nav>

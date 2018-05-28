@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Registration Page</title>
+  <title>HDB Chat IT | Registration Page</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,48 +21,50 @@
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2.html"><b>Administration</b>des comptes</a>
-  </div>
-
-  <div class="card">
+    <b>HDB-Chat</b>-IT
+  </div>  
+  <div class="col-md-12 card">
     <div class="card-body register-card-body">
-      <p class="login-box-msg">Creer un nouveau compte</p>
-
-      <form action="includes/register_action.php" method="post">
-        <div class="form-group has-feedback">
-          <input type="text" class="form-control" placeholder="Nom complet">
-          <span class="fa fa-user form-control-feedback"></span>
-        </div>
-        <div class="form-group has-feedback">
-          <input type="email" class="form-control" placeholder="Email">
-          <span class="fa fa-envelope form-control-feedback"></span>
-        </div>
-        <div class="form-group has-feedback">
-          <input type="password" class="form-control" placeholder="Mot de passe">
-          <span class="fa fa-lock form-control-feedback"></span>
-        </div>
-        <div class="form-group has-feedback">
-          <input type="password" class="form-control" placeholder="Retaper le mot de passe">
-          <span class="fa fa-lock form-control-feedback"></span>
+      <p class="login-box-msg">Créer un nouveau compte</p>
+      <form action="../../index.html" method="post">
+        <div class="row">
+          <div class="col-md-10 form-group has-feedback">
+            <input type="text" class="form-control" placeholder="Nom complet">            
+          </div>
+          <div class="col-md-2">
+            <span class="fa fa-user form-control-feedback"></span>
+          </div>
         </div>
         <div class="row">
-          <div class="col-8">
-            <div class="checkbox icheck">
-              <label>
-              </label>
-            </div>
+          <div class="col-md-10 form-group has-feedback">
+          <input type="email" class="form-control" placeholder="Email">
           </div>
-          <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block btn-flat">S'inscrire</button>
+          <div class="col-md-2">
+            <span class="fa fa-envelope form-control-feedback"></span>
           </div>
-          <!-- /.col -->
+        </div>
+        <div class="row">
+          <div class="col-md-10 form-group has-feedback">
+          <input type="password" class="form-control" placeholder="Mot de passe">
+          </div>
+          <div class="col-md-2">
+          <span class="fa fa-lock form-control-feedback"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 form-group has-feedback">
+            <input type="password" class="form-control" placeholder="Retaper le mot de passe">
+          </div>
+          <div class="col-md-2">
+            <span class="fa fa-lock form-control-feedback"></span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="/index.php" class="btn btn-default">Accueil</a>
+          <button type="submit" class="btn btn-primary float-right" onclick="">S'inscrire</button>
+        </div>
         </div>
       </form>
-
-      
-
-      
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->
