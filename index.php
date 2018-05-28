@@ -399,7 +399,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/register.php" class="nav-link">
+                <a href="register.php" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Inscription</p>
                 </a>
