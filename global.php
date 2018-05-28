@@ -1,3 +1,21 @@
+<?php
+require_once('inc/db_connect.php');
+$mysqli = conn();
+$sql = "
+  SELECT 
+    u.username as nom,
+    m.message
+  FROM 
+    messages m
+  INNER JOIN
+    users u ON m.user_id = u.id 
+  ORDER BY
+    m.date DESC
+";
+$result = $mysqli->query($sql);
+$aMessage = $result->fetch_all(MYSQLI_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -212,65 +230,48 @@
                 <div class="card-body">
                   <!-- Conversations are loaded here -->
                 <div class="direct-chat-messages">
-                  <!-- Message. Default to the left -->
-                  <div class="direct-chat-msg">
-                    <div class="direct-chat-info clearfix">
-                      <span class="direct-chat-name float-left">Irin Andrian</span>
-                    </div>
-                    <!-- /.direct-chat-info -->
-                    <img class="direct-chat-img" src="dist/img/profil1.png" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      Is this template really for free? That's unbelievable!
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
 
-                  <!-- Message to the right -->
-                  <div class="direct-chat-msg right">
-                    <div class="direct-chat-info clearfix">
-                      <span class="direct-chat-name float-right">Rija Michel</span>
-                    </div>
-                    <!-- /.direct-chat-info -->
-                    <img class="direct-chat-img" src="dist/img/profil2.png" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      You better believe it!
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                  <!-- Message. Default to the left -->
-                  <div class="direct-chat-msg">
-                    <div class="direct-chat-info clearfix">
-                      <span class="direct-chat-name float-left">Irin Andrian</span>
-                    </div>
-                    <!-- /.direct-chat-info -->
-                    <img class="direct-chat-img" src="dist/img/profil1.png" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      Working with AdminLTE on a great new app! Wanna join?
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                  <!-- Message to the right -->
-                  <div class="direct-chat-msg right">
-                    <div class="direct-chat-info clearfix">
-                      <span class="direct-chat-name float-right">Rija Michel</span>
-                    </div>
-                    <!-- /.direct-chat-info -->
-                    <img class="direct-chat-img" src="dist/img/profil2.png" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      I would love to.
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
+                  <?php
+                    $i = 0;
+                    foreach($aMessage as $key => $val){
+                      if ($i%2 == 0) {
+                      ?>
+                        <!-- Message. Default to the left -->
+                        <div class="direct-chat-msg">
+                          <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name float-left"><?php echo $val['nom'] ?></span>
+                          </div>
+                          <!-- /.direct-chat-info -->
+                          <img class="direct-chat-img" src="dist/img/profil1.png" alt="message user image">
+                          <!-- /.direct-chat-img -->
+                          <div class="direct-chat-text">
+                            <?php echo $val['message'] ?>
+                          </div>
+                          <!-- /.direct-chat-text -->
+                        </div>
+                        <!-- /.direct-chat-msg -->
+                      <?php
+                      } else {
+                        ?>
+                          <!-- Message to the right -->
+                          <div class="direct-chat-msg right">
+                            <div class="direct-chat-info clearfix">
+                              <span class="direct-chat-name float-right"><?php echo $val['nom'] ?></span>
+                            </div>
+                            <!-- /.direct-chat-info -->
+                            <img class="direct-chat-img" src="dist/img/profil2.png" alt="message user image">
+                            <!-- /.direct-chat-img -->
+                            <div class="direct-chat-text">
+                            <?php echo $val['message'] ?>
+                            </div>
+                            <!-- /.direct-chat-text -->
+                          </div>
+                          <!-- /.direct-chat-msg -->
+                        <?php
+                      }
+                      $i++;
+                    }
+                  ?>
 
                 </div>
                 <!--/.direct-chat-messages-->
