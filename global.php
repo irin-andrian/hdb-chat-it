@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
   <title>HDB Chat IT | Global</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,6 +79,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
+      <img src="dist/img/logo.jpg" alt="HDB Chat IT Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">HDB Chat IT</span>
     </a>
 
@@ -87,10 +88,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="dist/img/profil1.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Irin</a>
         </div>
       </div>
 
@@ -215,8 +216,69 @@
                 <!-- /.card-header -->
                 <div class="card-body">
                   <!-- Conversations are loaded here -->
-                  <div class="direct-chat-messages">
+                <div class="direct-chat-messages">
+                  <!-- Message. Default to the left -->
+                  <div class="direct-chat-msg">
+                    <div class="direct-chat-info clearfix">
+                      <span class="direct-chat-name float-left">Irin Andrian</span>
+                    </div>
+                    <!-- /.direct-chat-info -->
+                    <img class="direct-chat-img" src="dist/img/profil1.png" alt="message user image">
+                    <!-- /.direct-chat-img -->
+                    <div class="direct-chat-text">
+                      Is this template really for free? That's unbelievable!
+                    </div>
+                    <!-- /.direct-chat-text -->
                   </div>
+                  <!-- /.direct-chat-msg -->
+
+                  <!-- Message to the right -->
+                  <div class="direct-chat-msg right">
+                    <div class="direct-chat-info clearfix">
+                      <span class="direct-chat-name float-right">Rija Michel</span>
+                    </div>
+                    <!-- /.direct-chat-info -->
+                    <img class="direct-chat-img" src="dist/img/profil2.png" alt="message user image">
+                    <!-- /.direct-chat-img -->
+                    <div class="direct-chat-text">
+                      You better believe it!
+                    </div>
+                    <!-- /.direct-chat-text -->
+                  </div>
+                  <!-- /.direct-chat-msg -->
+
+                  <!-- Message. Default to the left -->
+                  <div class="direct-chat-msg">
+                    <div class="direct-chat-info clearfix">
+                      <span class="direct-chat-name float-left">Irin Andrian</span>
+                    </div>
+                    <!-- /.direct-chat-info -->
+                    <img class="direct-chat-img" src="dist/img/profil1.png" alt="message user image">
+                    <!-- /.direct-chat-img -->
+                    <div class="direct-chat-text">
+                      Working with AdminLTE on a great new app! Wanna join?
+                    </div>
+                    <!-- /.direct-chat-text -->
+                  </div>
+                  <!-- /.direct-chat-msg -->
+
+                  <!-- Message to the right -->
+                  <div class="direct-chat-msg right">
+                    <div class="direct-chat-info clearfix">
+                      <span class="direct-chat-name float-right">Rija Michel</span>
+                    </div>
+                    <!-- /.direct-chat-info -->
+                    <img class="direct-chat-img" src="dist/img/profil2.png" alt="message user image">
+                    <!-- /.direct-chat-img -->
+                    <div class="direct-chat-text">
+                      I would love to.
+                    </div>
+                    <!-- /.direct-chat-text -->
+                  </div>
+                  <!-- /.direct-chat-msg -->
+
+                </div>
+                <!--/.direct-chat-messages-->
                   <!--/.direct-chat-messages-->
                 </div>
                 <!-- /.card-body -->
