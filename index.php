@@ -71,7 +71,7 @@
               </p>
             </a>
           </li>
-          <?php if($_SESSION["id"] != " " && $_SESSION["username"] != " ";) { ?>
+          <?php if($_SESSION["id"] != null && $_SESSION["username"] != null) { ?>
               <li class="nav-item has-treeview menu-open">
               <a href="/" class="nav-link active">
                 <i class="nav-icon fa fa-dashboard"></i>
@@ -98,12 +98,9 @@
           </div>
           <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
-              <?php if($_SESSION["id"] != " " && $_SESSION["username"] != " ";) { ?>
                 <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-              <?php } else { ?>
                 <li class="breadcrumb-item"><a href="login.php">Login</a></li>
                 <li class="breadcrumb-item"><a href="register.php">Inscription</a></li>
-              <?php } ?>
             </ol>
           </div>
         </div>
@@ -113,33 +110,33 @@
     <!-- Main content -->
     <section class="content">
       <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1 class="display-3">Hello, world!</h1>
-        <p>Welcome to HDB Chat IT</p>        
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Welcome to HDB Chat IT</h1>
+        </div>
       </div>
-    </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
+      <div class="container">
+        <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-4">
+              <h2>Heading</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+              <h2>Heading</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+            <div class="col-md-4">
+              <h2>Heading</h2>
+              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+          </div>
       </div>
-      <!-- /.row -->
+        <!-- /.row -->
     </section>
     <!-- /.content -->
   </div>
