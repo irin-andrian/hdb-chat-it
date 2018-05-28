@@ -29,3 +29,23 @@ function getStateOfChat(){
 			});
 	}	 
 }
+
+//send the message
+function sendChat(message, nickname)
+{       
+    updateChat();
+     $.ajax({
+		   type: "POST",
+		   url: "process.php",
+		   data: {  
+		   			'function': 'send',
+					'message': message,
+					'nickname': nickname,
+					'file': file
+				 },
+		   dataType: "json",
+		   success: function(data){
+			   updateChat();
+		   },
+		});
+}
