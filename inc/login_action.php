@@ -9,6 +9,8 @@ if( isset($username) && isset($pwd) && empty($username) && empty($pwd) ){
     $result = $mysqli->query ($sql);
    $login = $result->fetch_all(MYSQLI_ASSOC);
 
-   location(header("Location: /global.php");)
+   location(header("Location: /global.php"););
+}else{
+	 location(header("Location: /login.php"););
 }
 ?>
