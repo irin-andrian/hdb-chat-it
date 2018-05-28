@@ -1,7 +1,6 @@
 <?php
   session_start();
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -71,7 +70,7 @@
               </p>
             </a>
           </li>
-          <?php if($_SESSION["id"] != null && $_SESSION["username"] != null) { ?>
+          <?php if($_SESSION["id"] != null) { ?>
               <li class="nav-item has-treeview menu-open">
               <a href="/" class="nav-link active">
                 <i class="nav-icon fa fa-dashboard"></i>
@@ -99,8 +98,10 @@
           <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                <?php if($_SESSION["id"] == null) { ?>
                 <li class="breadcrumb-item"><a href="login.php">Login</a></li>
                 <li class="breadcrumb-item"><a href="register.php">Inscription</a></li>
+                <?php } ?>
             </ol>
           </div>
         </div>
