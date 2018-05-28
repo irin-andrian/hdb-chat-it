@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 3 | Log in</title>
+    <title>HDB Chat IT | Log in</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,23 +30,50 @@
                 Connectez-vous pour commencer votre session</p>
 
             <form action="../../index2.html" method="post">
-                <div class="form-group has-feedback">
-                    <input type="email" class="form-control" placeholder="Email">
-                    <span class="fa fa-envelope form-control-feedback"></span>
-                </div>
-                <div class="form-group has-feedback">
-                    <input type="password" class="form-control" placeholder="Password">
-                    <span class="fa fa-lock form-control-feedback"></span>
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="form-group has-feedback">
+                            <input type="email" class="form-control" placeholder="Email">                            
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="fa fa-envelope form-control-feedback"></span>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-7">
-
+                    <div class="col-md-10">
+                        <div class="form-group has-feedback">
+                            <input type="password" class="form-control" placeholder="Mot de passe"> 
+                        </div>
                     </div>
-                    <!-- /.col -->
-                    <div class="col-5">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">Se connecter</button>
+                    <div class="col-md-2">
+                        <div class="form-group has-feedback">                            
+                            <span class="fa fa-lock form-control-feedback"></span>
+                        </div>
                     </div>
-                    <!-- /.col -->
+                </div>  
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary float-right">Se connecter</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-6">
+                        <span class="form-control-feedback">Pas encore membre?</span>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-6">
+                        <a href="/register.php">Créer un compte</a>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
                 </div>
             </form>
 
