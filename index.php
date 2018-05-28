@@ -40,28 +40,6 @@
           <a href="#" class="nav-link active">Accueil</a>
         </li>
       </ul>
-
-      <!-- Right navbar links -->
-      <ul class="navbar-nav ml-auto">
-        <!-- Messages Dropdown Menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link" data-toggle="dropdown" href="#">
-            <i class="fa fa-comments-o"></i>
-          </a>          
-        </li>
-        <!-- Notifications Dropdown Menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link" data-toggle="dropdown" href="#">
-            <i class="fa fa-bell-o"></i>
-          </a>          
-        </li>
-        <!-- Déconnexion -->
-        <li class="nav-item dropdown">
-          <a class="nav-link" data-toggle="dropdown" href="#">
-            <i class="fa fa-sign-out"></i>
-          </a>          
-        </li>
-      </ul>
   </nav>
   <!-- /.navbar -->
 
@@ -75,15 +53,6 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="dist/img/profil1.png" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Irin</a>
-        </div>
-      </div>
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
@@ -95,14 +64,6 @@
               <i class="nav-icon fa fa-dashboard"></i>
               <p>
                 Accueil
-              </p>
-            </a>
-          </li>
-          <li class="nav-item has-treeview menu-open">
-            <a href="global.php" class="nav-link">
-              <i class="nav-icon fa fa-th"></i>
-              <p>
-                Global
               </p>
             </a>
           </li>
@@ -124,6 +85,8 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+              <li class="breadcrumb-item"><a href="login.php">Login</a></li>
+              <li class="breadcrumb-item"><a href="register.php">Inscription</a></li>
             </ol>
           </div>
         </div>
