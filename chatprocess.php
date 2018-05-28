@@ -5,6 +5,7 @@
     $log = array();
 
     switch($function) {
+        
         case('getState'):
         if(file_exists('chat.txt')){
           $lines = file('chat.txt');
@@ -38,7 +39,7 @@
         	  
              break;
       
-    	 case('send'):
+    	case('send'):
          $nickname = htmlentities(strip_tags($_POST['nickname']));
             $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
              $message = htmlentities(strip_tags($_POST['message']));
