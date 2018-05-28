@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (!isset($_SESION['username'])){
+  header('Location: http://hdb-chat-it.local/register.php');
+}
 require_once('inc/db_connect.php');
 $mysqli = conn();
 $sql = "

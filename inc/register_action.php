@@ -10,7 +10,7 @@ SET username	= '" . $_POST['username']. "',
 
 $result = $mysqli->query ($sql);
 $_SESION['username'] = $_POST['username'];
-$_SESION['pwd'] = $_POST['pwd'];
+$_SESION['id'] = $_POST['id'];
 header('Location: http://hdb-chat-it.local/index.php');
 
 
