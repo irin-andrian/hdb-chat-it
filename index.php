@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,6 +71,16 @@
               </p>
             </a>
           </li>
+          <?php if($_SESSION["id"] != " " && $_SESSION["username"] != " ";) { ?>
+              <li class="nav-item has-treeview menu-open">
+              <a href="/" class="nav-link active">
+                <i class="nav-icon fa fa-dashboard"></i>
+                <p>
+                  Global
+                </p>
+              </a>
+            </li>
+          <?php } ?>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -83,10 +97,13 @@
           <div class="col-sm-6">
           </div>
           <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-              <li class="breadcrumb-item"><a href="login.php">Login</a></li>
-              <li class="breadcrumb-item"><a href="register.php">Inscription</a></li>
+              <ol class="breadcrumb float-sm-right">
+              <?php if($_SESSION["id"] != " " && $_SESSION["username"] != " ";) { ?>
+                <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+              <?php } else { ?>
+                <li class="breadcrumb-item"><a href="login.php">Login</a></li>
+                <li class="breadcrumb-item"><a href="register.php">Inscription</a></li>
+              <?php } ?>
             </ol>
           </div>
         </div>
