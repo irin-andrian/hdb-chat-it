@@ -29,7 +29,7 @@
             <p class="login-box-msg">
                 Connectez-vous pour commencer votre session</p>
 
-            <form action="../../index2.html" method="post">
+            <form action="inc/login_action.php" method="post">
                 <div class="row">
                     <div class="col-md-10">
                         <div class="form-group has-feedback">
