@@ -1,32 +1,8 @@
 <?php
 session_start();
-require_once('inc/db_connect.php');
-$mysqli = conn();
-$sql = "
-  SELECT 
-    u.username as nom,
-    m.message
-  FROM 
-    messages m
-  INNER JOIN
-    users u ON m.user_id = u.id 
-  ORDER BY
-    m.date DESC
-";
-$result = $mysqli->query($sql);
-$aMessage = $result->fetch_all(MYSQLI_ASSOC);
-
-$sqlUser = "
-  SELECT
-    id,
-    username
-  FROM
-    users
-";
-$resultUser = $mysqli->query($sqlUser);
-$aUser = $resultUser->fetch_all(MYSQLI_ASSOC);
+include 'inc/db_connect.php';
+include 'inc/sql-send-message.php';
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -281,11 +257,12 @@ $aUser = $resultUser->fetch_all(MYSQLI_ASSOC);
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                  <form action="#" method="post">
+                 <form action="inc/sendmessage.php" method="post">
                     <div class="input-group">
+                      <input type="hidden" name="user_id" value="<?php echo $_GET['id'] ?>">
                       <input name="message" placeholder="Ecrire le message ..." class="form-control" type="text">
                       <span class="input-group-append">
-                        <button type="button" class="btn btn-primary">Envoyer</button>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
                       </span>
                     </div>
                   </form>
