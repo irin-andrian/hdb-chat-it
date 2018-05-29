@@ -91,7 +91,7 @@ include 'inc/sql-send-message.php';
           <img src="dist/img/profil1.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Irin</a>
+          <a href="#" class="d-block"><?php echo $_GET['username']; ?></a>
         </div>
       </div>
 
