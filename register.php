@@ -43,7 +43,7 @@ Veuillez entrer au moins 5 caractères">
         <div class="row">
           <div class="col-md-10 form-group has-feedback">
 
-          <input type="password" name="pwd" class="form-control" placeholder="Mot de passe" required="required"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"  autofocus required title="
+          <input type="password" name="pwd" class="form-control" placeholder="Mot de passe" required="required"  autofocus required title="
 Veuillez entrer au moins 5 caractères avec une lettre en majuscule , un chiffre et un minuscule">
 
           </div>
