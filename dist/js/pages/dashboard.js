@@ -179,7 +179,7 @@ $(function () {
   var donut = new Morris.Donut({
     element  : 'sales-chart',
     resize   : true,
-    colors   : ['#007bff', '#dc3545', '#28a745'],
+    colors   : ['#d2d6de', '#dc3545', '#28a745'],
     data     : [
       { label: 'Download Sales', value: 12 },
       { label: 'In-Store Sales', value: 30 },
