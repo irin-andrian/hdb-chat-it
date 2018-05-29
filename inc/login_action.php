@@ -4,7 +4,6 @@ include 'db_connect.php';
 $username = $_POST['username'];
 $pwd = sha1($_POST['pwd']);
 
-
 if($username != null && $pwd != null){
     $sql = "SELECT * FROM users  WHERE users.username='".$username."' and users.pwd='".$pwd."'";
     $result = $mysqli->query ($sql);
