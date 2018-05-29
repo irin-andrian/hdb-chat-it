@@ -41,7 +41,7 @@
                 <div class="row">
                     <div class="col-md-10">
                         <div class="form-group has-feedback">
-                            <input type="text" name="username" class="form-control" placeholder="Username">                            
+                            <input type="text" name="username" class="form-control" placeholder="Username" required>                            
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -51,7 +51,7 @@
                 <div class="row">
                     <div class="col-md-10">
                         <div class="form-group has-feedback">
-                            <input type="password" name="pwd" class="form-control" placeholder="Mot de passe"> 
+                            <input type="password" name="pwd" class="form-control" placeholder="Mot de passe" required> 
                         </div>
                     </div>
                     <div class="col-md-2">

@@ -30,7 +30,7 @@
       <form action="inc/register_action.php" method="post">
         <div class="row">
           <div class="col-md-10 form-group has-feedback">
-            <input type="text" name="username" class="form-control" placeholder="Nom complet">            
+            <input type="text" name="username" class="form-control" placeholder="Nom complet" required>            
           </div>
           <div class="col-md-2">
             <span class="fa fa-user form-control-feedback"></span>
@@ -39,7 +39,7 @@
         
         <div class="row">
           <div class="col-md-10 form-group has-feedback">
-          <input type="password" name="pwd" class="form-control" placeholder="Mot de passe">
+          <input type="password" name="pwd" class="form-control" placeholder="Mot de passe" required>
           </div>
           <div class="col-md-2">
           <span class="fa fa-lock form-control-feedback"></span>
