@@ -2,7 +2,11 @@
 session_start();
 include 'db_connect.php';
 $user_id = $_POST['user_id'];
+<<<<<<< HEAD
 $user_name = $_POST['name'];
+=======
+$user_name = $_POST['user_name'];
+>>>>>>> modifier message body
 $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
 $message = htmlentities(strip_tags($_POST['message']));
 if (preg_match($reg_exUrl, $message, $url)) {
@@ -10,4 +14,8 @@ if (preg_match($reg_exUrl, $message, $url)) {
 } 
 $sql = "INSERT INTO messages (user_id, message, date) VALUES ('".$user_id."','".$message."',now())";
 $result = $mysqli->query ($sql);
+<<<<<<< HEAD
 header("Location: /global.php?id=".$user_id ."&username=".$user_name);
+=======
+header("Location: /global.php?id=".$user_id."&username=".$user_name);
+>>>>>>> modifier message body
