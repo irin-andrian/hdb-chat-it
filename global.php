@@ -1,7 +1,7 @@
 <?php
-session_start();
-include 'inc/db_connect.php';
-include 'inc/sql-send-message.php';
+  session_start();
+  include 'inc/db_connect.php';
+  include 'inc/sql-send-message.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -101,15 +101,15 @@ include 'inc/sql-send-message.php';
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="/" class="nav-link">
+            <a href="/index.php?id=<?php echo $_GET['id']; ?>&username=<?php echo $_GET['username']; ?>" class="nav-link">
               <i class="nav-icon fa fa-dashboard"></i>
               <p>
-                Accueil
+                Accueil 
               </p>
             </a>
           </li>
           <li class="nav-item has-treeview menu-open">
-            <a href="global.php" class="nav-link active">
+            <a href="/global.php?id=<?php echo $_GET['id']; ?>&username=<?php echo $_GET['username']; ?>" class="nav-link active">
               <i class="nav-icon fa fa-th"></i>
               <p>
                 Global
@@ -231,10 +231,10 @@ include 'inc/sql-send-message.php';
                       <?php
                       } else {
                         ?>
-                          <!-- Message to the right -->
-                          <div class="direct-chat-msg right">
+                          <!-- Message to the left -->
+                          <div class="direct-chat-msg left">
                             <div class="direct-chat-info clearfix">
-                              <span class="direct-chat-name float-right"><?php echo $val['nom'] ?></span>
+                              <span class="direct-chat-name float-left"><?php echo $val['nom'] ?></span>
                             </div>
                             <!-- /.direct-chat-info -->
                             <img class="direct-chat-img" src="dist/img/profil2.png" alt="message user image">
