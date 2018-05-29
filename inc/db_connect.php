@@ -4,8 +4,5 @@ function conn() {
   $mysqli->set_charset('utf8');
   return $mysqli;
 }
-
 $mysqli = conn();
-
-
 ?>
