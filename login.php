@@ -28,7 +28,15 @@
         <div class="card-body login-card-body">
             <p class="login-box-msg">
                 Authentification</p>
-
+            <?php
+            if(isset($_GET['loginfailed'])) {
+            ?>
+            <div class="alert alert-danger">
+                <strong>Mauvais Username ou Mot de passe</strong>
+            </div>
+            <?php
+            }
+            ?>
             <form action="inc/login_action.php" method="post">
                 <div class="row">
                     <div class="col-md-10">
