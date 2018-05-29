@@ -54,7 +54,7 @@
                     <div class="col-md-10">
                         <div class="form-group has-feedback">
 
-                            <input type="password" name="pwd" class="form-control" placeholder="Mot de passe" required="required" min="5" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}">
+                            <input type="password" name="pwd" class="form-control" placeholder="Mot de passe" required="required"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}">
 
                         </div>
                     </div>
