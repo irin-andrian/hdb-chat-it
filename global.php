@@ -131,7 +131,7 @@
                   <?php
                     $i = 0;
                     foreach($aMessage as $key => $val){
-                      if ($val['nom'] == $_GET['username']) {
+                      if ($val['nom'] != $_GET['username']) {
                       ?>
                         <!-- Message. Default to the left -->
                         <div class="direct-chat-msg right">
