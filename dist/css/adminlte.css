@@ -2179,7 +2179,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #d2d6de;
+  background-color: #1356dd;
   border-color: #d2d6de;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
@@ -2196,7 +2196,7 @@ fieldset:disabled a.btn {
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #ffffff;
-  background-color: #d2d6de;
+  background-color: #1356dd;
   border-color: #d2d6de;
 }
 
@@ -2458,7 +2458,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #d2d6de;
+  color: #1356dd;
   background-color: transparent;
   background-image: none;
   border-color: #d2d6de;
@@ -2482,7 +2482,7 @@ fieldset:disabled a.btn {
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #ffffff;
-  background-color: #d2d6de;
+  background-color: #1356dd;
   border-color: #d2d6de;
 }
 
@@ -8977,7 +8977,7 @@ body,
 
 .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active {
   color: #ffffff;
-  background-color: #d2d6de;
+  background-color: #1356dd;
 }
 
 .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-treeview {
