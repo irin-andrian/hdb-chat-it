@@ -21,7 +21,7 @@
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <b>HDB-Chat</b>-IT
+    <b>HDB Chat</b> IT
   </div>  
   <div class="col-md-12 card">
     <div class="card-body register-card-body">
@@ -44,13 +44,11 @@
           <div class="col-md-2">
           <span class="fa fa-lock form-control-feedback"></span>
           </div>
-
-        </div>
-       
+        </div>   
        
         <div class="card-footer">
-          <a href="/index.php" class="btn btn-default">Accueil</a>
-          <button type="submit" class="btn btn-primary float-right" onclick="">S'inscrire</button>
+          <button type="submit" class="btn btn-primary" onclick="">S'inscrire</button>
+          <a href="/index.php" class="btn btn-default float-right">Retour</a>          
         </div>
         </div>
       </form>

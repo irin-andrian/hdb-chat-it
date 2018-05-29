@@ -41,37 +41,8 @@
         <li class="nav-item">
           <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <a href="global.html" class="nav-link">Global</a>
-        </li>
       </ul>
 
-      <!-- Right navbar links -->
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto">
-              <!-- Messages Dropdown Menu -->
-              <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="dropdown" href="#">
-                  <i class="fa fa-comments-o"></i>
-                </a> 
-              </li>
-              <!-- Notifications Dropdown Menu -->
-              <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="dropdown" href="#">
-                   <i class="fa fa-bell-o"></i>
-                </a> 
-              </li>
-              <!-- Déconnexion -->
-              <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="dropdown" href="#">
-                   <i class="fa fa-sign-out"></i>
-                </a> 
-              </li>
-            </ul>
-        </li>
-      </ul>
   </nav>
   <!-- /.navbar -->
 
@@ -116,6 +87,14 @@
               </p>
             </a>
           </li>
+          <li class="nav-item has-treeview menu-open">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-sign-out"></i>
+              <p>
+                Déconnexion
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -129,14 +108,6 @@
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Global</a></li>
-              <li class="breadcrumb-item active">Liste des abonnés</li>
-            </ol>
-          </div>
         </div>
       </div><!-- /.container-fluid -->
     </section>
@@ -144,62 +115,10 @@
     <!-- Main content -->
     <section class="content">
       <div class="row">
-        <div class="col-md-4">
-          <div class="card card-primary card-outline">
-              <div class="card-header">
-                <h3 class="card-title">Liste</h3>
-                <div class="card-tools">
-                  <div class="input-group input-group-sm">
-                    <input type="text" class="form-control" placeholder="Recherche ...">
-                    <div class="input-group-append">
-                      <div class="btn btn-primary">
-                        <i class="fa fa-search"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /.card-tools -->
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body p-0">
-                <div class="table-responsive mailbox-messages">
-                  <table class="table table-hover table-striped">
-                    <tbody>
-                    <?php
-                        foreach($aUser as $user){
-                    ?>
-                          <tr>
-                            <td><input type="checkbox"></td>
-                            <td class="mailbox-star"><a href="#"><i class="fa fa-star text-warning"></i></a></td>
-                            <td class="mailbox-name"><a href="#"><?php echo $user['username'] ?></a></td>
-                          </tr>
-                    <?php
-                        }
-                    ?>                
-                    </tbody>
-                  </table>
-                  <!-- /.table -->
-                </div>
-                <!-- /.mail-box-messages -->
-              </div>
-              <!-- /.card-body -->
-              <div class="card-footer p-0">
-                <div class="mailbox-controls">
-                  <!-- /.btn-group -->
-                  <div class="float-right">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></button>
-                      <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></button>
-                    </div>
-                    <!-- /.btn-group -->
-                  </div>
-                  <!-- /.float-right -->
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-1">
+        </div>
         <!-- /.col -->
-        <div class="col-md-8">
+        <div class="col-md-10">
           <div class="card direct-chat direct-chat-primary">
                 <div class="card-header ui-sortable-handle" style="cursor: move;">
                   <h3 class="card-title">Discussion instantanée</h3>
@@ -271,7 +190,12 @@
               </div>
             <!-- /. box -->
           </div>
+        
+        
+        
         <!-- /.col -->
+        <div class="col-md-1">
+        </div>
       </div>
       <!-- /.row -->
     </section>

@@ -40,38 +40,8 @@
         <li class="nav-item">
           <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <a href="#" class="nav-link active">Accueil</a>
-        </li>
       </ul>
-      <?php if($_GET['id'] != null) { ?>
-        <!-- Right navbar links -->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <!-- Right navbar links -->
-              <ul class="navbar-nav ml-auto">
-                <!-- Messages Dropdown Menu -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link" data-toggle="dropdown" href="#">
-                    <i class="fa fa-comments-o"></i>
-                  </a> 
-                </li>
-                <!-- Notifications Dropdown Menu -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link" data-toggle="dropdown" href="#">
-                    <i class="fa fa-bell-o"></i>
-                  </a> 
-                </li>
-                <!-- Déconnexion -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link" data-toggle="dropdown" href="#">
-                    <i class="fa fa-sign-out"></i>
-                  </a> 
-                </li>
-              </ul>
-          </li>
-        </ul>
-      <?php } ?> 
+      
   </nav>
 
     
@@ -82,7 +52,7 @@
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
       <img src="dist/img/logo.jpg" alt="HDB Chat IT Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">HDB Chat IT</span>
+      <span class="brand-text font-weight-light rigth">HDB Chat IT</span>
     </a>
 
     <!-- Sidebar -->
@@ -113,11 +83,36 @@
             </a>
           </li>
           <?php if($_GET['id'] != null) { ?>
-              <li class="nav-item has-treeview menu-open">
+            <li class="nav-item has-treeview menu-open">
               <a href="/global.php?id=<?php echo $_GET['id']; ?>&username=<?php echo $_GET['username']; ?>" class="nav-link">
-                <i class="nav-icon fa fa-dashboard"></i>
+                <i class="nav-icon fa fa-th"></i>
                 <p>
                   Global
+                </p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview menu-open">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-sign-out"></i>
+                <p>
+                  Déconnexion
+                </p>
+              </a>
+            </li>            
+          <?php } else {?>
+            <li class="nav-item has-treeview menu-open">
+              <a href="/login.php" class="nav-link">
+                <i class="nav-icon fa fa-sign-in"></i>
+                <p>
+                  Connexion
+                </p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview menu-open">
+              <a href="/register.php" class="nav-link">
+                <i class="nav-icon fa fa-registered"></i>
+                <p>
+                  Inscription
                 </p>
               </a>
             </li>
@@ -132,7 +127,7 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <!-- <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
@@ -147,8 +142,8 @@
             </ol>
           </div>
         </div>
-      </div><!-- /.container-fluid -->
-    </section>
+      </div>
+    </section> -->
 
     <!-- Main content -->
     <section class="content">
