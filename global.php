@@ -180,7 +180,6 @@
                     <div class="input-group">
                       <input type="hidden" name="user_id" value="<?php echo $_GET['id'] ?>"> 
                       <input type="hidden" name="name" value="<?php echo $_GET['username'] ?>">
-                      <input type="hidden" name="user_name" value="<?php echo $_GET['username'] ?>">
                       <input name="message" placeholder="Ecrire le message ..." class="form-control" type="text">
                       <span class="input-group-append">
                         <button type="submit" class="btn btn-primary">Envoyer</button>
