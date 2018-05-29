@@ -1,5 +1,6 @@
 <?php
   session_start();
+  include 'inc/db_connect.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,7 +44,37 @@
           <a href="#" class="nav-link active">Accueil</a>
         </li>
       </ul>
+      <?php if($_GET['id'] != null) { ?>
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <!-- Right navbar links -->
+              <ul class="navbar-nav ml-auto">
+                <!-- Messages Dropdown Menu -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="fa fa-comments-o"></i>
+                  </a> 
+                </li>
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bell-o"></i>
+                  </a> 
+                </li>
+                <!-- Déconnexion -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="fa fa-sign-out"></i>
+                  </a> 
+                </li>
+              </ul>
+          </li>
+        </ul>
+      <?php } ?> 
   </nav>
+
+    
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
@@ -56,6 +87,17 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
+    <!-- Sidebar user panel (optional) -->
+      <?php if($_GET['id'] != null) { ?>
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="dist/img/profil1.png" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block"><?php echo $_GET['username']; ?></a>
+          </div>
+        </div>
+      <?php } ?>      
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
@@ -63,16 +105,16 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="/" class="nav-link active">
+            <a href="/index.php?id=<?php echo $_GET['id']; ?>&username=<?php echo $_GET['username']; ?>" class="nav-link active">
               <i class="nav-icon fa fa-dashboard"></i>
               <p>
                 Accueil
               </p>
             </a>
           </li>
-          <?php if($_SESSION["id"] != null) { ?>
+          <?php if($_GET['id'] != null) { ?>
               <li class="nav-item has-treeview menu-open">
-              <a href="/" class="nav-link active">
+              <a href="/global.php?id=<?php echo $_GET['id']; ?>&username=<?php echo $_GET['username']; ?>" class="nav-link">
                 <i class="nav-icon fa fa-dashboard"></i>
                 <p>
                   Global
@@ -98,9 +140,9 @@
           <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-                <?php if($_SESSION["id"] == null) { ?>
-                <li class="breadcrumb-item"><a href="login.php">Login</a></li>
-                <li class="breadcrumb-item"><a href="register.php">Inscription</a></li>
+                <?php if($_GET['id'] == null) { ?>
+                  <li class="breadcrumb-item"><a href="login.php">Login</a></li>
+                  <li class="breadcrumb-item"><a href="register.php">Inscription</a></li>
                 <?php } ?>
             </ol>
           </div>
