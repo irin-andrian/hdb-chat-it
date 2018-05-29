@@ -15,7 +15,7 @@ if($username != null && $pwd != null){
 
          header("Location: /global.php?id=".$data[0]['id']."&username=".$data[0]['username']);
      }else{
-         header("Location: /login.php");
+         header("Location: /login.php?loginfailed");
      }
 }else{
     header("Location: /login.php");
