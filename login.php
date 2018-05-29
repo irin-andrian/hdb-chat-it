@@ -21,13 +21,13 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="../../index2.html"><b>HDB-chat</b>-IT</a>
+        <a href="#"><b>HDB Chat</b> IT</a>
     </div>
     <!-- /.login-logo -->
     <div class="card">
         <div class="card-body login-card-body">
             <p class="login-box-msg">
-                Connectez-vous pour commencer votre session</p>
+                Authentification</p>
 
             <form action="inc/login_action.php" method="post">
                 <div class="row">
@@ -53,26 +53,12 @@
                     </div>
                 </div>  
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-5">
                         <button type="submit" class="btn btn-primary float-right">Se connecter</button>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                    </div>
-                    <div class="col-md-6">
-                        <span class="form-control-feedback">Pas encore membre?</span>
-                    </div>
-                    <div class="col-md-3">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                    </div>
-                    <div class="col-md-6">
-                        <a href="/register.php">Créer un compte</a>
-                    </div>
-                    <div class="col-md-3">
+                    <div class="col-md-7 pull-rigth">
+                        <div><span class="form-control-feedback">Pas encore membre?</span></div>
+                        <div><a href="/register.php">Créer un compte</a></div>
                     </div>
                 </div>
             </form>
