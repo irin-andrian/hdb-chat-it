@@ -73,7 +73,6 @@
                         <div><a href="/register.php">Créer un compte</a></div>
                     </div>
                     <div class="col-md-3">
-
                     </div>
                 </div>
             </form>
