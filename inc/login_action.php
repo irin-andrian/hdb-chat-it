@@ -9,7 +9,7 @@ if($username != null && $pwd != null){
     $data = $result->fetch_all(MYSQLI_ASSOC);
     $_SESION['username'] = $_POST['username'];
 	$_SESION['id'] = $data[0]['id'];
-	header("Location: /global.php?id=".$data[0]['id']);
+	header("Location: /global.php?id=".$data[0]['id']."&username=".$data[0]['username']);
 }
 else{
     header("Location: /login.php");
