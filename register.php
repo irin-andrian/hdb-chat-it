@@ -30,7 +30,10 @@
       <form action="inc/register_action.php" method="post">
         <div class="row">
           <div class="col-md-10 form-group has-feedback">
-            <input type="text" name="username" class="form-control" placeholder="Nom complet" required>            
+
+            <input type="text" name="username" class="form-control" placeholder="Nom complet"   pattern=".{6,}" autofocus required title="
+Veuillez entrer au moins 5 caractères">
+
           </div>
           <div class="col-md-2">
             <span class="fa fa-user form-control-feedback"></span>
@@ -39,7 +42,10 @@
         
         <div class="row">
           <div class="col-md-10 form-group has-feedback">
-          <input type="password" name="pwd" class="form-control" placeholder="Mot de passe" required>
+
+          <input type="password" name="pwd" class="form-control" placeholder="Mot de passe" required="required"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"  autofocus required title="
+Veuillez entrer au moins 5 caractères avec une lettre en majuscule , un chiffre et un minuscule">
+
           </div>
           <div class="col-md-2">
           <span class="fa fa-lock form-control-feedback"></span>
