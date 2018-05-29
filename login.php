@@ -59,17 +59,25 @@
                             <span class="fa fa-lock form-control-feedback"></span>
                         </div>
                     </div>
-                </div>  
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary" onclick="">Se connecter</button>
+                    <a href="/index.php" class="btn btn-default float-right">Retour</a>
+                </div>
                 <div class="row">
-                    <div class="col-md-5">
-                        <button type="submit" class="btn btn-primary float-right">Se connecter</button>
+                    <div class="col-md-3">
+
                     </div>
-                    <div class="col-md-7 pull-rigth">
+                    <div class="col-md-6">
                         <div><span class="form-control-feedback">Pas encore membre?</span></div>
                         <div><a href="/register.php">Créer un compte</a></div>
                     </div>
+                    <div class="col-md-3">
+
+                    </div>
                 </div>
             </form>
+
 
             <!-- /.social-auth-links -->
 
