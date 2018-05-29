@@ -231,10 +231,10 @@
                       <?php
                       } else {
                         ?>
-                          <!-- Message to the right -->
-                          <div class="direct-chat-msg right">
+                          <!-- Message to the left -->
+                          <div class="direct-chat-msg left">
                             <div class="direct-chat-info clearfix">
-                              <span class="direct-chat-name float-right"><?php echo $val['nom'] ?></span>
+                              <span class="direct-chat-name float-left"><?php echo $val['nom'] ?></span>
                             </div>
                             <!-- /.direct-chat-info -->
                             <img class="direct-chat-img" src="dist/img/profil2.png" alt="message user image">
